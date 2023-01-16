@@ -1,0 +1,620 @@
+/* >>>>>>>>>>>>>>>>>>>>>
+common css starts here
+<<<<<<<<<<<<<<<<<<<<<<< */
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+.container {
+  width: 1408px;
+  margin: 0 auto;
+}
+.header--modify {
+  padding: 0;
+}
+.header__title {
+  font-size: 20px;
+  font-weight: 500px;
+  color: #ff5538;
+  font-family: "Poppins", sans-serif;
+  line-height: 140%;
+}
+.header__text {
+  font-size: 48px;
+  font-weight: 600px;
+  color: #29313d;
+  font-family: "Poppins", sans-serif;
+  line-height: 140%;
+  padding-top: 10px;
+  width: 449px;
+}
+.button--modify {
+  border: none;
+  border-radius: 18px;
+  padding: 14px 0px;
+  box-sizing: border-box;
+  background: transparent;
+}
+.button__text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+  transition: all linear 0.3s;
+  background-color: #ff5538;
+  border: 2px solid #ff5538;
+  padding: 14px 28px;
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+.button__text:hover {
+  background-color: transparent;
+  color: #ff5538;
+}
+/* >>>>>>>>>>>>>>>>>>>>>
+common css ends here
+<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>
+nav css starts here
+<<<<<<<<<<<<<<<<<<<<<<< */
+.nav--modify {
+  width: 100%;
+  position: absolute;
+  z-index: 22;
+  padding-top: 30px;
+}
+.navWrapper--modify {
+  display: flex;
+  align-items: center;
+}
+.navLogo {
+  width: 20%;
+}
+.navMenu--modify {
+  width: 60%;
+}
+.navMenuBox--modify {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+.navMenu__item {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #29313d;
+}
+.navButton--modify {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+}
+
+.navButton__button {
+  padding: 14px 28px;
+  background-color: #ff5538;
+  border-radius: 18px;
+  border: none;
+}
+.navButton__text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+}
+/* >>>>>>>>>>>>>>>>>>>>>
+nav css ends here
+<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>
+banner css starts here
+<<<<<<<<<<<<<<<<<<<<<<< */
+.banner--modify {
+  background: url(../images/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 293px;
+  padding-bottom: 310px;
+  position: relative;
+}
+.banner__head {
+  width: 771px;
+  font-size: 64px;
+  font-weight: 700;
+  color: #29313d;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: capitalize;
+  line-height: 130%;
+}
+.banner__paragraph {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+  font-family: "Nunito", sans-serif;
+  width: 547px;
+  padding-top: 24px;
+  padding-bottom: 48px;
+  line-height: 200%;
+}
+.bannerButton--modify {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.bannerButton__button {
+  border: none;
+}
+.bannerButton__text {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  background-color: #ff5538;
+  padding: 14px 28px;
+  border-radius: 18px;
+  border: 1px solid #ff5538;
+  transition: all linear 0.3s;
+  text-transform: capitalize;
+}
+.bannerButton__text:hover {
+  background-color: transparent;
+  color: #ff5538;
+}
+.transparentCircle--modify {
+  width: 121px;
+  height: 121px;
+  border-radius: 50%;
+  top: 110px;
+  left: 805px;
+  position: absolute;
+  border: 2px solid #ffabba;
+  background: transparent;
+  animation: Circle 5s infinite linear;
+}
+.innerCircle--modify {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  top: 80px;
+  left: -4px;
+  background-color: #ffabba;
+  position: relative;
+}
+@keyframes Circle {
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cross--modify {
+  font-size: 20px;
+  top: 129px;
+  left: 295px;
+  color: #ffabba;
+  position: absolute;
+  animation: cross 6s infinite linear alternate;
+}
+
+@keyframes cross {
+  0% {
+    transform: rotate(0deg) scale(50%);
+  }
+  100% {
+    transform: rotate(360deg) scale(150%);
+  }
+}
+.crossTwo--modify {
+  font-size: 20px;
+  top: 631px;
+  left: 127px;
+  color: #ffdcd8;
+  position: absolute;
+  animation: crossT 2s infinite linear;
+}
+.crossThree--modify {
+  font-size: 20px;
+  left: 1442px;
+  top: 369px;
+  color: #c087ee;
+  position: absolute;
+  animation: crossT 3s infinite linear;
+}
+.crossFour--modify {
+  font-size: 20px;
+  left: 1206px;
+  top: 534px;
+  color: #ffdcd8;
+  position: absolute;
+  animation: crossT 3s infinite linear;
+}
+.crossFive--modify {
+  font-size: 20px;
+  left: 1050px;
+  top: 750px;
+  color: #ffdcd8;
+  position: absolute;
+  animation: crossT 3s infinite linear;
+}
+
+@keyframes crossT {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.oneCircle--modifyOne {
+  width: 18px;
+  height: 18px;
+  background: #c087ee;
+  border-radius: 50%;
+  top: 225px;
+  left: 1123px;
+  position: absolute;
+  animation: oneCircle 3s infinite alternate linear;
+}
+.oneCircle--modifyTwo {
+  width: 18px;
+  height: 18px;
+  background: #ffdcd8;
+  border-radius: 50%;
+  top: 509px;
+  left: 168px;
+  position: absolute;
+  animation: oneCircle 3s infinite alternate linear;
+}
+
+@keyframes oneCircle {
+  from {
+    transform: scale(50%);
+  }
+  to {
+    transform: scale(150%);
+  }
+}
+.oneCircle--modifyThree {
+  width: 25px;
+  height: 25px;
+  background: #ffdcd8;
+  border-radius: 50%;
+  top: 725px;
+  left: 210px;
+  position: absolute;
+  animation: skew 3s infinite alternate linear;
+}
+@keyframes skew {
+  0% {
+    transform: skew(0deg);
+  }
+  50% {
+    transform: skew(60deg);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+.bannerShape__top {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: Shape 4s infinite linear alternate;
+}
+@keyframes Shape {
+  from {
+    transform: translate(0%, 0%);
+  }
+  to {
+    transform: translate(-15%, -15%);
+  }
+}
+/* >>>>>>>>>>>>>>>>>>>>>
+banner css ends here
+<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>
+service css starts here
+<<<<<<<<<<<<<<<<<<<<<<< */
+.serviceWrapper--modify {
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.servicePart--modify {
+  padding: 40px 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 1);
+  width: 32%;
+}
+.servicePart__title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #29313d;
+  font-family: "Poppins", sans-serif;
+  padding-top: 34px;
+  line-height: 160%;
+}
+.servicePart__paragraph {
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+  font-family: "Nunito", sans-serif;
+  padding-top: 16px;
+  line-height: 200%;
+}
+/* >>>>>>>>>>>>>>>>>>>>>
+service css ends here
+<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>>>
+digital css starts here
+<<<<<<<<<<<<<<<<<<<<<<< */
+.digitalContent--modify {
+  display: flex;
+}
+.digitalContent__left {
+  width: 50%;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  z-index: 999;
+}
+.dgitalContent__img {
+  width: 115%;
+  height: 521px;
+  display: block;
+  top: 50%;
+}
+.digitalContent__right {
+  width: 50%;
+  background-color: #fbf3f0;
+  padding: 100px 185px;
+  position: relative;
+  z-index: 99;
+}
+
+.digitalContent__right--head {
+  font-size: 36px;
+  font-weight: 600;
+  color: #29313d;
+  font-family: "Poppins", sans-serif;
+  line-height: 140%;
+  width: 570px;
+}
+
+.digitalContent__right--paragraph {
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+  font-family: "Nunito", sans-serif;
+  padding-top: 20px;
+  line-height: 200%;
+  padding-bottom: 48px;
+  width: 501px;
+}
+
+.digitalRight__stick {
+  right: 0;
+  bottom: -40px;
+  position: absolute;
+  animation: stick 3s infinite linear alternate;
+}
+
+@keyframes stick {
+  from {
+    transform: translate(0%, 15%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>
+digital css ends here
+<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>>>
+counting css starts here
+<<<<<<<<<<<<<<<<<<<<<<< */
+.counting__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.countingContent--modify {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  padding-top: 60px;
+}
+
+.countingContent__smallPart {
+  width: 40%;
+  position: relative;
+}
+
+.countingContent__bigPart {
+  position: relative;
+  width: 58%;
+}
+
+.counting__imgOne {
+  width: 100%;
+  display: block;
+  height: 458px;
+}
+
+.counting__imgTwo {
+  width: 100%;
+  display: block;
+  height: 458px;
+}
+
+.counting__textBox {
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  bottom: -120px;
+  left: 0;
+  box-sizing: border-box;
+  padding: 30px;
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 1);
+  transform: scale(0);
+  transition: all linear .3s;
+}
+.countingContent__bigPart:hover,
+.countingContent__smallPart:hover .counting__textBox {
+  bottom: 0;
+  transform: scale(1);
+}
+.countingContent__bigPart:hover .counting__textBox {
+  bottom: 0;
+  transform: scale(1);
+}
+
+.textBox__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #29313d;
+  font-family: "Poppins", sans-serif;
+  line-height: 140%;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+
+.textBox__ilnk {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff5538;
+  line-height: 100%;
+}
+/* >>>>>>>>>>>>>>>>>>>>>
+counting css ends here
+<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>>>
+complete css starts here
+<<<<<<<<<<<<<<<<<<<<<<< */
+section#complete\ complete--modify {
+  background: #fdf9fd;
+  margin-top: 120px;
+}
+
+.completeWrapper--modify{
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.completeLeft--modify{
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.completeBox--modify{
+  box-sizing: border-box;
+  padding: 74px 60px;
+  width: 47%;
+  text-align: center;
+  background: #ffffff;
+}
+
+.completeBox__number{
+  font-size: 40px;
+  font-weight: 600;
+  color: #29313d;
+  font-family: "Poppins", sans-serif;
+  line-height: 140%;
+}
+
+.completeBox__text{
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+  line-height: 100%;
+}
+
+.completeRight--modify{
+  width: 55%;
+  padding-left: 100px;
+}
+.completeRight__title{
+  font-size: 48px;
+  font-weight: 600;
+  color: #29313d;
+  font-family: "Poppins", sans-serif;
+  line-height: 140%;
+  width: 570px;
+}
+.completeRight__paragraph{
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+  font-family: 'Nunito', sans-serif;
+  line-height: 200%;
+  width: 530px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+/* >>>>>>>>>>>>>>>>>>>>>
+complete css ends here
+<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>>>
+global css starts here
+<<<<<<<<<<<<<<<<<<<<<<< */
+.globalWrapper--modify{
+  padding: 120px 0;
+}
+.globalHead__title{
+  font-size: 48px;
+  font-weight: 600;
+  color: #29313d;
+  font-family: "Poppins", sans-serif;
+  line-height: 140%;
+  padding-bottom: 60px;
+  text-align: center;
+  width: 849px;
+  margin: 0 auto;
+}
+.globalContent--modify{
+  display: flex;
+  justify-content: space-between;
+}
+.globalContent__box{
+  padding: 49px 41px;
+  background-color: #fdf9fd;
+  font-size: 18px;
+  color: #29313d;
+  letter-spacing: 3px;
+  width: 9%;
+}
+/* >>>>>>>>>>>>>>>>>>>>>
+global css ends here
+<<<<<<<<<<<<<<<<<<<<<<< */
